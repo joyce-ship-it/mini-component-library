@@ -38,19 +38,34 @@ const InputWrapper = styled.div`
   &:focus-within {
     outline: 2px solid ${COLORS.primary};
   }
+  &:hover {
+    color: black;
+  }
+  &:hover ::placeholder {
+    color: black;
+  }
+  position: relative;
+  padding-top: 8px;
 `;
 const Input = styled.input`
   font-size: var(--fontSize);
   border: none;
   outline: none;
   padding-bottom: 7px;
-  padding-left: 10px;
+  padding-left: 30px;
   padding-right: 30px;
+  display: inline-block;
+  color: ${COLORS.gray700};
+  &:hover {
+    color: black;
+  }
 `;
 const IconWrapper = styled.div`
   display: inline-block;
-  position: relative;
-  top: 5px;
+  position: absolute;
+  bottom: 8px;
   left: 0;
+  pointer-events: none;
+  color: ${COLORS.gray700};
 `;
 export default IconInput;
