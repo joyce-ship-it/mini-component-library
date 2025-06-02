@@ -41,6 +41,9 @@ const InputWrapper = styled.div`
   &:hover {
     color: black;
   }
+  &:hover > div {
+    color: black;
+  }
   &:hover ::placeholder {
     color: black;
   }
@@ -55,6 +58,7 @@ const Input = styled.input`
   padding-left: 30px;
   padding-right: 30px;
   display: inline-block;
+  width: 100%;
   color: ${COLORS.gray700};
   &:hover {
     color: black;
